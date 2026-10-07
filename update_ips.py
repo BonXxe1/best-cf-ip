@@ -105,12 +105,12 @@ def main():
     tz = timezone(timedelta(hours=8))
     now = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 
-    lines = []
-    lines.append("# 按国家分组的完整 IP / 域名列表（包含 proxifly 免费代理）")
-    lines.append("# 格式: ip:端口#国家代码-地区")
-    lines.append(f"# 生成时间: {now} (UTC+8)")
-    lines.append("# 注意: 带 FreeProxy 的节点质量参差不齐，建议优先使用无此标注的节点")
-    lines.append("")
+    # lines = []
+    # lines.append("# 按国家分组的完整 IP / 域名列表（包含 proxifly 免费代理）")
+    # lines.append("# 格式: ip:端口#国家代码-地区")
+    # lines.append(f"# 生成时间: {now} (UTC+8)")
+    # lines.append("# 注意: 带 FreeProxy 的节点质量参差不齐，建议优先使用无此标注的节点")
+    # lines.append("")
 
     order = ["HK", "SG", "JP", "KR", "TW", "US", "DE", "NL", "AE", "CF"]
     total = 0
