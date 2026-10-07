@@ -101,35 +101,29 @@ def main():
                 if port in ["443","8443","2053","2083","2087","2096","80","8080","3128","1080","8888","8880","2052","2082","2086","2095","10808","10809"]:
                     add(f"{ip}:{port}", cc, "FreeProxy")
 
-    # 输出
+    # 输出：仅 ip:端口#国家代码-地区
     lines = []
+    seen = set()
 
     order = ["HK", "SG", "JP", "KR", "TW", "US", "DE", "NL", "AE", "CF"]
-    total = 0
+
+    def emit(cc):
+        for item in sorted(set(results.get(cc, []))):
+            if item not in seen:
+                seen.add(item)
+                lines.append(item)
+
     for cc in order:
-        items = sorted(set(results.get(cc, [])))
-        if not items: continue
-        free = sum(1 for x in items if "FreeProxy" in x)
-        premium = len(items) - free
-        lines.append(f"# 【{cc}】 共 {len(items)} 条 (优质:{premium} / 免费代理:{free})")
-        lines.extend(items)
-        lines.append("")
-        total += len(items)
+        emit(cc)
 
     for cc in sorted(results.keys()):
         if cc not in order:
-            items = sorted(set(results[cc]))
-            lines.append(f"# 【{cc}】 共 {len(items)} 条")
-            lines.extend(items)
-            lines.append("")
-            total += len(items)
-
-    lines.append(f"# 总计: {total} 条")
+            emit(cc)
 
     with open("best_ips_grouped_full.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+        f.write("\n".join(lines) + ("\n" if lines else ""))
 
-    print(f"更新完成，共 {total} 条")
+    print(f"更新完成，共 {len(lines)} 条")
 
 if __name__ == "__main__":
     main()
