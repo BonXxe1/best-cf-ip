@@ -2,7 +2,7 @@ name: 自动更新优选IP
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # 每6小时更新一次（UTC时间）
+    - cron: '0 19 * * *'   # 每6小时更新一次（UTC时间）
   workflow_dispatch:        # 允许手动点击运行
 
 jobs:
