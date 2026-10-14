@@ -20,6 +20,9 @@ SOURCES: Dict[str, str] = {
     "090227_cfyes":     "https://addressesapi.090227.xyz/CloudFlareYes?port=443",
     "my_source":        "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/main/best-cf-ip-collected.txt",
     "my_source1":        "https://raw.githubusercontent.com/LancelotRar/best-cf-domains/main/best-cf-domain.txt",
+    "my_source2":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestProxy/bestproxy%26country.txt?port=8443",
+    "my_source3":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt?port=8443",
+    "my_source4":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv6.txt?port=8443",
 
     # ---- 自由添加，格式随意，自动识别 ----
     # "my_source": "https://example.com/anything.txt",
