@@ -23,7 +23,10 @@ SOURCES: Dict[str, str] = {
     "my_source2":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestProxy/bestproxy%26country.txt?port=8443",
     "my_source3":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt?port=8443",
     "my_source4":        "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv6.txt?port=8443",
-
+    "my_source5":        "Cm.Soso.Edu.Kg",
+    "my_source6":        "Sub.Cmliussss.Net",
+    "my_source7":        "Owo.O00o.Ooo",
+    
     # ---- 自由添加，格式随意，自动识别 ----
     # "my_source": "https://example.com/anything.txt",
 }
