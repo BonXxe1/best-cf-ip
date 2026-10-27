@@ -80,7 +80,47 @@ SOURCES: Dict[str, str] = {
     "bestcf_tiancheng_all": "https://bestcf.pages.dev/tiancheng/all.txt",
     "bestcf_s5gy_all": "https://bestcf.pages.dev/s5gy/all.txt",
     "bestcf_domain_mini": "https://bestcf.pages.dev/domain/mini.txt?port=443",
+    "bestcf_domain_all": "https://bestcf.pages.dev/domain/all.txt?port=443",
+    "bestcf_domain_asia": "https://bestcf.pages.dev/domain/Domain-Asia.txt?port=443",
+    "bestcf_domain_ai": "https://bestcf.pages.dev/domain/Domain-AI-VPS789.txt?port=443",
+    "bestcf_domain_ygkkk": "https://bestcf.pages.dev/domain/ygkkk/all.txt?port=443",
+    "bestcf_domain_qms": "https://bestcf.pages.dev/domain/qms/all.txt?port=443",
+    "bestcf_domain_fiatnorm": "https://bestcf.pages.dev/domain/fiatnorm/all.txt?port=443",
+    "bestcf_domain_senflare": "https://bestcf.pages.dev/domain/senflare/all.txt?port=443",
+    "bestcf_domain_wuya": "https://bestcf.pages.dev/domain/wuya/all.txt?port=443",
     "bestcf_domain_ircf": "https://bestcf.pages.dev/domain/ircf/all.txt?port=443",
+    "bestcf_vps789_top10": "https://bestcf.pages.dev/vps789/top10.txt",
+    "bestcf_vps789_top20": "https://bestcf.pages.dev/vps789/top20.txt",
+    "bestcf_vps789_top50": "https://bestcf.pages.dev/vps789/top50.txt",
+    "bestcf_vps789_top100": "https://bestcf.pages.dev/vps789/top100.txt",
+    "bestcf_tiancheng_mini": "https://bestcf.pages.dev/tiancheng/mini.txt",
+    "bestcf_tiancheng2_all": "https://bestcf.pages.dev/tiancheng2/all.txt",
+    "bestcf_tiancheng2_mini": "https://bestcf.pages.dev/tiancheng2/mini.txt",
+    "bestcf_tiancheng3_all": "https://bestcf.pages.dev/tiancheng3/all.txt",
+    "bestcf_tiancheng3_mini": "https://bestcf.pages.dev/tiancheng3/mini.txt",
+    "bestcf_gslege_cfxyz": "https://bestcf.pages.dev/gslege/Cfxyz.txt",
+    "bestcf_zhixuan": "https://bestcf.pages.dev/zhixuanwang/ipv4-onlyip.txt?port=443",
+    "bestcf_s5gy_mini": "https://bestcf.pages.dev/s5gy/mini.txt",
+    "bestcf_cmliu2": "https://bestcf.pages.dev/cmliu2/all.txt",
+    "bestcf_kristi": "https://bestcf.pages.dev/kristi/all.txt",
+    "bestcf_moistr": "https://bestcf.pages.dev/moistr/all.txt",
+    "bestcf_yutian": "https://bestcf.pages.dev/yutian/all.txt",
+    "bestcf_warp": "https://bestcf.pages.dev/WARP/WARP-MINI.txt",
+    "bestcf_warp_443": "https://bestcf.pages.dev/WARP/WARP-MINI-443.txt",
+    "bestcf_warp_8443": "https://bestcf.pages.dev/WARP/WARP-MINI-8443.txt",
+    "bestcf_entryip": "https://bestcf.pages.dev/entryip/50.txt",
+    "bestcf_090227_all": "https://090227.pages.dev/bestcf?isp=all&ips=20",
+    "bestcf_090227_ct": "https://090227.pages.dev/bestcf?isp=ct&ips=50",
+    "bestcf_090227_cu": "https://090227.pages.dev/bestcf?isp=cu&ips=50",
+    "bestcf_090227_cmcc": "https://090227.pages.dev/bestcf?isp=cmcc&ips=50",
+    "090227_ip164746": "https://addressesapi.090227.xyz/ip.164746.xyz?port=443",
+    "lancelot_top400": "https://raw.githubusercontent.com/LancelotRar/best-cf-ips/refs/heads/main/best-cf-ip-scanned-top400.txt",
+    "gshtwy_wetest": "https://raw.githubusercontent.com/gshtwy/CF-DNS-Clone/refs/heads/main/wetest-cloudflare-v4.txt",
+    "fiatnorm_ips": "https://raw.githubusercontent.com/Fiatnorm/OptiDomain-Pages/refs/heads/main/optimized_cf_ips.txt",
+    "zip_cm": "https://zip.cm.edu.kg/all.txt",
+    "countrymerge": "https://countrymerge.pages.dev/all.txt",
+    "xgonce_csv": "https://raw.githubusercontent.com/xgonce/Cloudflare_IP/refs/heads/main/result.csv",
+    "proxyip_ltd": "https://github.com/Xiaobei09/proxyip/raw/refs/heads/main/data/valid/all_ltd.txt",
     "kafemars_domains": "https://raw.githubusercontent.com/KafeMars/best-ips-domains/main/BestDomains",
     # 直接写入，不发起请求
     "literal_cm": "Cm.Soso.Edu.Kg",
@@ -105,14 +145,32 @@ GROUPED_SOURCES = [
     (
         "tiancheng",
         "https://bestcf.pages.dev/tiancheng/{cc}.txt",
-        ["HK", "SG", "JP", "KR", "US"],
+        ["HK", "SG", "JP", "KR", "US", "TW"],
+        False,
+    ),
+    (
+        "tiancheng2",
+        "https://bestcf.pages.dev/tiancheng2/{cc}.txt",
+        ["HK", "DE", "JP", "KR", "SG", "US", "TW"],
+        False,
+    ),
+    (
+        "tiancheng3",
+        "https://bestcf.pages.dev/tiancheng3/{cc}.txt",
+        ["HK", "SG", "JP", "KR", "US", "TW"],
         False,
     ),
     (
         "s5gy",
         "https://bestcf.pages.dev/s5gy/{cc}.txt",
-        ["HK", "SG", "JP", "US"],
+        ["HK", "SG", "JP", "KR", "US", "TW"],
         False,
+    ),
+    (
+        "bestcf_gslege",
+        "https://bestcf.pages.dev/gslege/{cc}.txt",
+        ["SG", "DE", "US", "NL", "JP"],
+        True,
     ),
     (
         "kafemars",
@@ -126,6 +184,7 @@ ALLOWED_PORTS = {
     "443", "8443", "2053", "2083", "2087", "2096",
     "80", "8080", "3128", "1080", "8888", "8880",
     "2052", "2082", "2086", "2095", "10808", "10809",
+    "7443", "4443",
 }
 ORDER = ["HK", "SG", "JP", "KR", "TW", "US", "DE", "NL", "AE", "GB", "CF"]
 OUTPUT_FILE = "best_ips_grouped_full.txt"
@@ -431,6 +490,16 @@ def iter_records(text: str) -> Iterable[str]:
         line = raw.strip()
         if not line or line[0] in "#/<!" or line.startswith("//"):
             continue
+        if "," in line and not line.lower().startswith("ip,"):
+            parts = [part.strip() for part in line.split(",")]
+            if (
+                len(parts) >= 5
+                and re.fullmatch(r"(?:\d{1,3}\.){3}\d{1,3}", parts[0])
+                and parts[2].isdigit()
+            ):
+                cc = parts[4].upper()
+                yield f"{parts[0]}:{parts[2]}" + (f"#{cc}" if re.fullmatch(r"[A-Z]{2}", cc) else "")
+                continue
         if " | " in line:
             yield line
             continue
