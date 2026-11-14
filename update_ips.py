@@ -33,9 +33,6 @@ SOURCES: Dict[str, str] = {
     # 聚合
     "yuanxiawan": "https://raw.githubusercontent.com/yuanxiawan/cfipv4db/refs/heads/main/cfip.txt",
     
-    # 天成优选
-    "天成优选": "https://api.soso.sryze.cc/AutoSubFBot.txt",
-    
     # bestcf.pages.dev 镜像（国家分包的见 GROUPED_SOURCES）
     "bestcf_wetest": "https://bestcf.pages.dev/wetest/ipv4.txt",
     "bestcf_cfyes_v4": "https://bestcf.pages.dev/cfyes/ipv4.txt",
