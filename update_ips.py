@@ -43,11 +43,6 @@ SOURCES: Dict[str, str] = {
 
     #WARP
     "核心段": "https://warp-masque-bestip.pages.dev/?ips=50&level=p0&port=random",
-    
-    # 直接写入，不发起请求
-    "literal_cm": "Cm.Soso.Edu.Kg",
-    "literal_sub": "Sub.Cmliussss.Net",
-    "literal_owo": "Owo.O00o.Ooo",
 }
 
 # 模板, 国家码, 路径里用小写还是大写
