@@ -40,7 +40,10 @@ SOURCES: Dict[str, str] = {
     "bestcf_cmliu": "https://bestcf.pages.dev/cmliu/all.txt",
     "bestcf_vvhan_v6": "https://bestcf.pages.dev/vvhan/ipv6.txt",
     "bestcf_vps789_top100": "https://bestcf.pages.dev/vps789/top100.txt",
-
+    
+    #域名
+    "域名": "https://bestcf.pages.dev/domain/all.txt",
+    
     #WARP
     "核心段": "https://warp-masque-bestip.pages.dev/?ips=50&level=p0&port=random",
 }
